@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "comic sans MS";
+}
+
+/* Style the header */
+header {
+  background-color: #0000ff;
+  padding: 30px;
+  text-align: center;
+  font-family: "comic sans MS";
+  font-size: 30px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ff0000;
+  padding: 20px;
+  color: white
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #80bfff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0000ff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>HOW I MADE THIS WEBSITE!</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+    <h1>Who made this website?</h1>
+    <p>Hi my name is Lavya Khatri. I'm 10yrs old, and I am here to tell you how I made this website.If your wondering if this was FUN I can 100% tell you it was FUN!
+    Also if your thinking was this hard, FOR SURE IT WAS HARD but I did it!!!!</p>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>This Is When The Struggle Starts</h1>
+    <p>
+      So first I thought I could make a website out of showing you guys on how to edit in fortnite.
+       but that didn't go very well so I thought to make a website on how I made this website. Ironic isn't it.
+     so i got some help from my Dad. he helped me on a few things. so this is the stuff that I learned first of all:
+     <ul>
+       <li>IT IS SUPER FUN TO MAKE A WEBSITE</li>
+       <li>2nd of all i learned so many new fonts, colors and more!</li>
+       <li>i learned a little bit if CSS (Cascading Style Sheets)</li
+     </ul>
+    </p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+
+</footer>
+
+</body>
+</html>
+  <h1>
